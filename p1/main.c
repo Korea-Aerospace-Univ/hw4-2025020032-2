@@ -7,20 +7,20 @@ int main(void)
     int c=0;
     
     scanf("%d",&a);
-    printf("정답입력:%d", a);
+    printf("정답입력:%d\n", a);
     
     do{
         scanf("%d",&b);
         c+=1;
         
         if(a>b){
-            printf("%d보다 낮습니다. \n",a);
+            printf("%d>? \n",a);
         }
         else if(a<b){
-            printf("%d보다 높습니다.\n",a);
+            printf("%d<?\n",a);
         }
         else{
-            printf("%d 정답입니다.\n",a);
+            printf("%d==?\n",a);
         }
     
     }while(a!=b);
