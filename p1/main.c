@@ -1,30 +1,29 @@
-
 #include <stdio.h>
 
 int main(void) {
-    int a;
-    int b;
-    int c = 0;
+    int a=0;    //입력받을 정답을 저장할 정수형 변수 a선언 및 초기화 
+    int b=0;   //정답을 맞추기 위해서 입력할 정수형 변수 b선언 및 초기화 
+    int c = 0; //시도횟수를 셀 변수 c 선언 및 초기화
 
-    scanf("%d", &a);
+    scanf("%d", &a);     //정답이 될 숫자를 입력받아서 a에 저장
 
-    do {
-        scanf("%d", &b);
-        c++;
+    do {                //do while 문은 조건검사가 나중에 수행된다. 1번은 무조건 do안에 있는 코드가 실행된다.  
+        scanf("%d", &b);// 정답을 맞추기 위해 새로운 숫자를 입력받아서 b에 저장한다. 
+        c++;            //숫자 하나를 입력받을때마다 c(시도횟수)를 1 증가 시킨다. 
 
-        if (b>a) {
+        if (b>a) {    //입력값b와 정답 a 비교한다. b가 a보다 클 때 중괄호 안에있는 printf를 실행한다. 
             printf("%d>?\n",b);
         }
-        else if (b<a) {
+        else if (b<a) { // b가 a보다 작을 때 중괄호 안에 있는 printf가 실행된다. 
             printf("%d<?\n",b);
         }
-        else {
+        else {          //b와 a가 크지도 작지도 않을때, 같을 때(정답이 될 때) 실행된다.
             printf("%d==?\n",b);
         }
 
-    } while (b!=a);
+    } while (b!=a); //b가 a와 같지 않다면 (조건식이 T) 다시 do부분으로 올라가서 앞의 조건문을 반복한다. 
+                     // (조건식이 F) b와a가 같다면 다음으로 넘어간다. 
+    printf("%d\n", c); // 시도횟수를 출력한다. 
 
-    printf("%d\n", c);
-
-    return 0;
+    return 0;          //프로그램을 정상 종료한다. 
 }
