@@ -1,31 +1,30 @@
 
 #include <stdio.h>
 
-int main(void)
-{
+int main(void) {
     int a;
     int b;
-    int c=0;
-    
-    scanf("%d",&a);
-    printf("%d\n", a);
-    
-    do{
-        scanf("%d",&b);
-        c+=1;
-        
-        if(a>b){
-            printf("%d>? \n",a);
+    int c = 0;
+
+    scanf("%d", &a);
+
+    do {
+        scanf("%d", &b);
+        c++;
+
+        if (b>a) {
+            printf("%d>?\n",b);
         }
-        else if(a<b){
-            printf("%d<?\n",a);
+        else if (b<a) {
+            printf("%d<?\n",b);
         }
-        else{
-            printf("%d==?\n",a);
+        else {
+            printf("%d==?\n",b);
         }
-    
-    }while(a!=b);
-    
-    printf("%d\n",c);
+
+    } while (b!=a);
+
+    printf("%d\n", c);
+
     return 0;
 }
