@@ -2,8 +2,7 @@
 
 int main(void)
 {
-    int a,b=0;
-    int c=0;
+    int a,b,c=0;
     
     scanf("%d",&a);
     printf("정답입력:%d\n", a);
