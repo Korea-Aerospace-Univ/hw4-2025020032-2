@@ -2,7 +2,8 @@
 
 int main(void)
 {
-    int a,b,c=0;
+    int a,b;
+    int c=0;
     
     scanf("%d",&a);
     printf("%d\n", a);
