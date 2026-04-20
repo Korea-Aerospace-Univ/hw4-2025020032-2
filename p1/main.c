@@ -1,3 +1,4 @@
+
 #include <stdio.h>
 
 int main(void)
@@ -23,6 +24,7 @@ int main(void)
         }
     
     }while(a!=b);
-        printf("%d\n",c);
+    
+    printf("%d\n",c);
     return 0;
 }
