@@ -1,4 +1,3 @@
-
 #include <stdio.h>
 
 int main(void)
@@ -24,9 +23,6 @@ int main(void)
         }
     
     }while(a!=b);
-        
-    
-    
-    printf("시도횟수는 %d회\n",c);
+        printf("%d\n",c);
     return 0;
 }
