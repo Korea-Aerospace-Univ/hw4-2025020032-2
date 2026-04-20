@@ -3,7 +3,8 @@
 
 int main(void)
 {
-    int a,b;
+    int a;
+    int b;
     int c=0;
     
     scanf("%d",&a);
