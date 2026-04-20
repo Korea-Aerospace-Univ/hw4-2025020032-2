@@ -5,7 +5,7 @@ int main(void)
     int a,b,c=0;
     
     scanf("%d",&a);
-    printf("정답입력:%d\n", a);
+    printf("%d\n", a);
     
     do{
         scanf("%d",&b);
